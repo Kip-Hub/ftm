@@ -80,3 +80,40 @@ button {
     transform: rotate(360deg);
   }
 }
+
+table{
+
+    border-collapse: collapse;
+  text-align: center;
+
+}
+
+th, td{
+
+  border: none;
+
+  padding: 10px;
+  font-weight: 100px;
+}
+
+th{
+
+  background-color: #34495E;
+  color: white;
+}
+td{
+
+  color: black;
+
+}
+tr:nth-of-type(odd){
+  
+  background-color: #c2c5c7;
+}
+
+tr:nth-of-type(even){
+  background-color: #8b8f92;
+
+}
+
+

@@ -3,10 +3,12 @@ import { csv } from "d3";
 import './App.css';
 
 function App() {
+
   const [postcode, setPostcode] = useState("");
   const [postcodeLink, setpostcodeLink] = useState(null);
   const [cbsData, setcbsData] = useState(null);
-
+  const [results, setResults] = useState([])
+ 
   useEffect(() => {
     const getData = async () => {
       await fetch("./cbs.json")
@@ -22,14 +24,54 @@ function App() {
     getData();
   }, []);
 
+
+const createList = () => {
+
+console.log(results)
+
+
+  return(
+    <>
+      <table>
+<tr>
+  <th>Plaats</th>
+  <th>Jaar</th>
+  <th>Afstand huisarts</th>
+  <th>Aantal inwoners</th>
+
+</tr>
+    {results.map((data, index) =>(
+     
+  <tr>
+   <td>{data.GWB_NAAM}</td>
+   <td>{data.Jaar}</td>
+   <td>{data.huisarts_afst}</td>
+   <td>{data.inwoners}</td>
+  </tr>
+  
+    ))}
+   
+
+     </table>
+    </>
+  )}
+
   const onSearch = () => {
+    
     const input = postcode.toUpperCase();
     let areaCode = postcodeLink.filter((d) => d.PC6 === input)[0];
+   
     let combinedData = cbsData.filter((d) =>
       d.GWB_CODE.includes(areaCode.Buurt2020)
     );
-    console.log(combinedData);
+   
+ setResults(combinedData)
   };
+ 
+
+
+
+
 
     return (
         <section>
@@ -41,6 +83,8 @@ function App() {
               onChange={(e) => setPostcode(e.target.value)}
               />
               <button onClick={onSearch}>Bekijk jouw buurt</button>  
+              {createList()}
+
   </section>
     )
 }
