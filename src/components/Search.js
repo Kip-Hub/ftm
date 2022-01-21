@@ -14,16 +14,17 @@ const Search = () => {
   const [postcode, setPostcode] = useState("");
   const [postcodeLink, setpostcodeLink] = useState(null);
   const [cbsData, setcbsData] = useState(null);
+  const [result, setResult] = useState(null);
 
   useEffect(() => {
     const getData = async () => {
-      await fetch("./CBS.json")
+      await fetch("./cbs.json")
         .then((response) => response.json())
         .then((data) => {
           setcbsData(data);
         });
 
-      const response = await csv("./jointable.csv");
+      const response = await csv("./areacodes.csv");
       setpostcodeLink(response);
     };
 
@@ -36,12 +37,16 @@ const Search = () => {
     let combinedData = cbsData.filter((d) =>
       d.GWB_CODE.includes(areaCode.Buurt2020)
     );
-    console.log(combinedData);
+    setResult(combinedData);
+    if (result != null) {
+      console.log(result);
+    }
+    
   };
 
     return (
       <Router>
-            <section>
+            <section id="search">
               <p>Hoe gaat het er in jouw buurt aan toe?</p>
                 <input
                     placeholder="1234AB"
@@ -49,10 +54,10 @@ const Search = () => {
                     value={postcode}
                     onChange={(e) => setPostcode(e.target.value)}
                     />
-                    <Link to="/search"><button id="doe" onClick={onSearch}>Bekijk jouw buurt</button></Link>
+                    <Link to="/search"><button onClick={onSearch}>Bekijk jouw buurt</button></Link>
             </section>
         <Routes>
-          <Route exact path="/search" element={<StoryTest/>}></Route>
+         { result &&<Route exact path="/search" element={<StoryTest passedData = {result}/>}></Route>}
         </Routes>
       </Router>
     )
