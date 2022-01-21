@@ -19,12 +19,6 @@ max-width: 100%;
 }
 
 
-section:first-of-type p {
-  color:rgb(99, 99, 99);
-  font-size: 1.3em;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
-  }
 
 input, button {
   margin-bottom: 1.5em;
