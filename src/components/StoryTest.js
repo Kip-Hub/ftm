@@ -70,8 +70,8 @@ const stories = [
       <Stories
                   stories={stories}
                   defaultInterval={8000}
-                  width={375}
-                  height={812}
+                  width={window.screen.width}
+                  height={window.screen.height}
               />
   )
 }
