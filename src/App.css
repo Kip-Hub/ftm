@@ -80,13 +80,15 @@ body {
 }
 
 .storycontent {
+  text-align: left;
+  font-size: 1.3em;
   max-width: 90%;
   padding-left: 1em;
   padding-right: 1em;
 }
 
 .storycontainer .highlighted {
-  color:orangered;
+  color: rgb(255, 102, 51);
 }
 
 .storycontainer .sidenote {
