@@ -47,18 +47,20 @@ const Search = () => {
     return (
       <Router>
             <section id="search">
-              <img src="./startscherm.png"></img>
-              <p>Hoe gaat het er in jouw buurt aan toe?</p>
-                <input
-                    placeholder="1234AB"
-                    id="postcodeInput"
-                    value={postcode}
-                    onChange={(e) => setPostcode(e.target.value)}
-                    />
-                    <Link to="/search"><button onClick={onSearch}>Bekijk jouw buurt</button></Link>
+              <div id="searchComponent">
+                <img src="./startscherm.png"></img>
+                <p>Benieuwd naar je eigen buurt?</p>
+                  <input
+                      placeholder="1234AB"
+                      id="postcodeInput"
+                      value={postcode}
+                      onChange={(e) => setPostcode(e.target.value)}
+                      />
+                      <Link to="/story"><button onClick={onSearch}>Zoek postcode</button></Link>
+                </div>
             </section>
         <Routes>
-         { result &&<Route exact path="/search" element={<StoryTest passedData = {result}/>}></Route>}
+         { result &&<Route exact path="/story" element={<StoryTest passedData = {result}/>}></Route>}
         </Routes>
       </Router>
     )
