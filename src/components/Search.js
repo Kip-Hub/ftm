@@ -47,6 +47,7 @@ const Search = () => {
     return (
       <Router>
             <section id="search">
+              <img src="./startscherm.png"></img>
               <p>Hoe gaat het er in jouw buurt aan toe?</p>
                 <input
                     placeholder="1234AB"

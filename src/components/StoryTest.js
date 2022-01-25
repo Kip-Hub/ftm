@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Basisschool from "./Basisschool"
 import Bibliotheek from "./Bibliotheek"
+import Vmbo from "./Vmbo"
+import Ziekenhuis from "./Ziekenhuis"
  
 import Stories from 'react-insta-stories';
 
@@ -22,9 +24,21 @@ const stories = [
               <Bibliotheek passedData = {result}/>
          </div>
     ),
+  },
+  {
+    content: (props) => (
+         <div class="storyelement">
+              <Vmbo passedData = {result}/>
+         </div>
+    ),
+  },
+  {
+    content: (props) => (
+         <div class="storyelement">
+              <Ziekenhuis passedData = {result}/>
+         </div>
+    ),
   }
-
-  
 ];
 
   return (
