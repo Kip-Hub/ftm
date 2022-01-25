@@ -9,7 +9,8 @@ body {
   min-width: 100%;
 }
 
-#search {
+#searchComponent {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,6 +51,10 @@ body {
 
 #search img {
   max-width: 100%;
+}
+
+.hidden {
+  display: none;
 }
 
 .storyelement {
