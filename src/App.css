@@ -1,32 +1,34 @@
 .App {
   text-align: center;
+  box-sizing: border-box;
+  margin: 0px;
 }
 
 body {
-  background-color: rgb(231, 231, 231);
+  background-color: rgb(225, 234, 249);
+  min-width: 100%;
 }
 
-.App {
-  text-align: center;
-}
-
-section:first-of-type {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-max-width: 100%;
+#search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 
-section:first-of-type p {
+#search p {
   color:rgb(99, 99, 99);
   font-size: 1.3em;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   }
 
-input, button {
+#search a {
+  min-width: 100%;
+}
+
+#search input, button {
   margin-bottom: 1.5em;
   min-height: 3em;
   border-radius: 25px;
@@ -35,48 +37,44 @@ input, button {
   min-width: 80%;
 }
 
-input:first-of-type {
+#search input:first-of-type {
   text-indent: 1em;
 }
 
-button {
+#search button {
   background-color: rgb(39, 39, 39);
   color: white;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#search img {
+  max-width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.storyelement {
+  background-color: rgb(225, 234, 249);
+  width: 100%;
+  height: 100%;
+  color: rgb(41, 41, 41);
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.storycontainer {
+  min-width: 90%;
+  padding-left: 1em;
+  padding-right: 1em;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: nowrap;
+  max-width: 80%;
 }
 
-.App-link {
-  color: #61dafb;
+.storycontainer .highlighted {
+  color:orangered;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.storycontainer .sidenote {
+  font-size: 0.7em;
+  font-weight: normal;
 }
