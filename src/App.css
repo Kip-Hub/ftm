@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  box-sizing: border-box;
 }
 
 body {
@@ -40,4 +41,31 @@ body {
   color: white;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
+}
+
+.basisschoolstory {
+  background: lavender;
+  width: 100%;
+  height: 100%;
+  color: rgb(41, 41, 41);
+  font-weight: bold;
+}
+
+.storycontainer {
+  min-width: 90%;
+  padding-left: 1em;
+  padding-right: 1em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  max-width: 80%;
+}
+
+.storycontainer .highlighted {
+  color:orangered;
+}
+
+.storycontainer .sidenote {
+  font-size: 0.7em;
+  font-weight: normal;
 }
