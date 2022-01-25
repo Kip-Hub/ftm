@@ -4,9 +4,15 @@
   margin: 0px;
 }
 
+@font-face {
+  font-family: "Rubik";
+  src: url("../public/Rubik-Regular.ttf");
+}
+
 body {
   background-color: rgb(225, 234, 249);
   min-width: 100%;
+  font-family: "Rubik", serif;
 }
 
 #searchComponent {
@@ -66,13 +72,17 @@ body {
 }
 
 .storycontainer {
-  min-width: 90%;
-  padding-left: 1em;
-  padding-right: 1em;
+  min-width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   max-width: 80%;
+}
+
+.storycontent {
+  max-width: 90%;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .storycontainer .highlighted {
