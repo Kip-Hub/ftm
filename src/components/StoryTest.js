@@ -11,14 +11,14 @@ const result = props.passedData;
 const stories = [
   {
     content: (props) => (
-        <div class="basisschoolstory">
+        <div class="storyelement">
               <Basisschool passedData = {result}/>
         </div>
        ),
   },
   {
     content: (props) => (
-         <div class="basisschoolstory">
+         <div class="storyelement">
               <Bibliotheek passedData = {result}/>
          </div>
     ),

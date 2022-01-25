@@ -16,7 +16,7 @@ console.log(props.passedData[props.passedData.length - 1].Jaar + " " + lastYear)
                 <div class ="storycontainer">
                     <p>De afstand naar de dichtstbijzijnde bibliotheek in <p class="highlighted">{props.passedData[0].GWB_NAAM}</p></p>
                     <p>is met <p class="highlighted">{sum.toString().replaceAll('-','')} km </p>afgenomen</p>
-                    <p class="sidenote">* van {props.passedData[0].Jaar} tot {props.passedData[props.passedData.length - 1].Jaar} </p>
+                    <p class="sidenote">* tussen {props.passedData[0].Jaar} tot {props.passedData[props.passedData.length - 1].Jaar} </p>
                 </div>
             );
         case false:
@@ -25,7 +25,7 @@ console.log(props.passedData[props.passedData.length - 1].Jaar + " " + lastYear)
                 <div class ="storycontainer">
                     <p>De afstand naar de dichtstbijzijnde bibliotheek in <p class="highlighted">{props.passedData[0].GWB_NAAM}</p></p>
                     <p>is met <p class="highlighted">{sum} km </p>toegenomen</p>
-                    <p class="sidenote">* van {props.passedData[0].Jaar} tot {props.passedData[props.passedData.length - 1].Jaar} </p>
+                    <p class="sidenote">* tussen {props.passedData[0].Jaar} tot {props.passedData[props.passedData.length - 1].Jaar} </p>
                 </div>
             );
     }
