@@ -17,8 +17,7 @@ console.log(props.passedData[props.passedData.length - 1].Jaar + " " + lastYear)
                 <div class ="storycontainer">
                     <img src="./basisschool.png"></img>
                     <div class="storycontent">
-                        <p>De afstand naar de dichtstbijzijnde basisschool in <p class="highlighted">{props.passedData[0].GWB_NAAM}</p></p>
-                        <p>is met <p class="highlighted">{sum.toString().replaceAll('-','')} km </p>afgenomen</p>
+                        <p>De afstand naar de dichtstbijzijnde basisschool in <span class="highlighted">{props.passedData[0].GWB_NAAM}</span> is met <span class="highlighted">{sum.toString().replaceAll('-','')} km </span>afgenomen</p>
                         <p class="sidenote">* tussen {props.passedData[0].Jaar} en {props.passedData[props.passedData.length - 1].Jaar} </p>
                     </div>
                 </div>
@@ -29,8 +28,7 @@ console.log(props.passedData[props.passedData.length - 1].Jaar + " " + lastYear)
                 <div class ="storycontainer">
                     <img src="./basisschool.png"></img>
                     <div class="storycontent">
-                        <p>De afstand naar de dichtstbijzijnde basisschool in <p class="highlighted">{props.passedData[0].GWB_NAAM}</p></p>
-                        <p>is met <p class="highlighted">{sum} km </p>toegenomen</p>
+                        <p>De afstand naar de dichtstbijzijnde basisschool in <span class="highlighted">{props.passedData[0].GWB_NAAM}</span> is met <span class="highlighted">{sum} km </span>toegenomen</p>
                         <p class="sidenote">* tussen {props.passedData[0].Jaar} en {props.passedData[props.passedData.length - 1].Jaar} </p>
                     </div>
                 </div>
