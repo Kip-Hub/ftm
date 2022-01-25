@@ -4,7 +4,8 @@ const Ziekenhuis = (props) => {
 
 const firstYear = props.passedData[0].ziekenhuis_incl_afst.replaceAll(',', '.');
 const lastYear = props.passedData[props.passedData.length - 1].ziekenhuis_incl_afst.replaceAll(',', '.');
-let sum = lastYear - firstYear;
+let sumToRound = lastYear - firstYear;
+let sum = Math.round(parseFloat(sumToRound)*100)/100;
 
 console.log(props.passedData[0].Jaar + " " + firstYear);
 console.log(props.passedData[props.passedData.length - 1].Jaar + " " + lastYear);
@@ -17,7 +18,7 @@ console.log(props.passedData[props.passedData.length - 1].Jaar + " " + lastYear)
                     <img src="./ziekenhuis.png"></img>
                     <p>De afstand naar het dichtstbijzijnde ziekenhuis in <p class="highlighted">{props.passedData[0].GWB_NAAM}</p></p>
                     <p>is met <p class="highlighted">{sum.toString().replaceAll('-','')} km </p>afgenomen</p>
-                    <p class="sidenote">* tussen {props.passedData[0].Jaar} tot {props.passedData[props.passedData.length - 1].Jaar} </p>
+                    <p class="sidenote">* tussen {props.passedData[0].Jaar} en {props.passedData[props.passedData.length - 1].Jaar} </p>
                 </div>
             );
         case false:
@@ -27,7 +28,7 @@ console.log(props.passedData[props.passedData.length - 1].Jaar + " " + lastYear)
                     <img src="./ziekenhuis.png"></img>
                     <p>De afstand naar het dichtstbijzijnde ziekenhuis in <p class="highlighted">{props.passedData[0].GWB_NAAM}</p></p>
                     <p>is met <p class="highlighted">{sum} km </p>toegenomen</p>
-                    <p class="sidenote">* tussen {props.passedData[0].Jaar} tot {props.passedData[props.passedData.length - 1].Jaar} </p>
+                    <p class="sidenote">* tussen {props.passedData[0].Jaar} en {props.passedData[props.passedData.length - 1].Jaar} </p>
                 </div>
             );
     }

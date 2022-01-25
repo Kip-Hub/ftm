@@ -3,6 +3,7 @@ import Basisschool from "./Basisschool"
 import Bibliotheek from "./Bibliotheek"
 import Vmbo from "./Vmbo"
 import Ziekenhuis from "./Ziekenhuis"
+import Summary from "./Summary"
  
 import Stories from 'react-insta-stories';
 
@@ -36,6 +37,13 @@ const stories = [
     content: (props) => (
          <div class="storyelement">
               <Ziekenhuis passedData = {result}/>
+         </div>
+    ),
+  },
+  {
+    content: (props) => (
+         <div class="storyelement">
+              <Summary passedData = {result}/>
          </div>
     ),
   }
