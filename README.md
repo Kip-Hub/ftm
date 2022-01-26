@@ -1,14 +1,14 @@
 # Follow the money
 
-![gif](https://im3.ezgif.com/tmp/ezgif-3-01c0530a7e.gif)    
-[live demo (mobile device)](https://ftm-zeta.vercel.app)
+![gif](https://i.imgur.com/7DVltVt.gif)    
+[live demo link (mobile devices)](https://ftm-zeta.vercel.app)
 
 ## 📁 Contents
 [🚀 Description](https://github.com/Kip-Hub/ftm#-description)  
 [⚙️ Installation](https://github.com/Kip-Hub/ftm#-installation)  
-[📚 Documentation](https://www.notion.so/FTM-470915b610ab40c38b645c1915a629ca)  
-[🧩 Data](https://github.com/Kip-Hub/ftm#-resources)    
-[📦 Resources](https://github.com/Kip-Hub/ftm#-sources)   
+[📚 Documentation](https://github.com/Kip-Hub/ftm#-documentation)  
+[🧩 Data](https://github.com/Kip-Hub/ftm#-data)    
+[📦 Resources](https://github.com/Kip-Hub/ftm#-resources)   
 [🙋 Contributors](https://github.com/Kip-Hub/ftm#-contributors)   
 [📎 License](https://github.com/Kip-Hub/ftm#-license)   
 
