@@ -76,8 +76,11 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  max-width: 80%;
   padding-top: 1em;
+}
+
+.imagediv img {
+  max-width: 100%;
 }
 
 .storycontent {

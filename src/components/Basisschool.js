@@ -11,7 +11,9 @@ let sum = Math.round(parseFloat(sumToRound)*100)/100;
         case true:
             return (
                 <div class ="storycontainer">
-                    <img src="./basisschool.png"></img>
+                    <div class="imagediv">
+                        <img src="./basisschool.png"></img>
+                    </div>
                     <div class="storycontent">
                     <p>Een kind liep in <span class="highlighted">{props.passedData[0].GWB_NAAM}</span> eerst  <span class="highlighted">{firstYear} km </span>naar de basisschool, nu is dat <span class="highlighted">{lastYear} km </span></p>
                         <p class="sidenote">* afname van <span class="bold">{sum.toString().replaceAll('-','')}</span> tussen {props.passedData[0].Jaar} en {props.passedData[props.passedData.length - 1].Jaar} </p>
@@ -22,7 +24,9 @@ let sum = Math.round(parseFloat(sumToRound)*100)/100;
         case false:
             return (
                 <div class ="storycontainer">
-                    <img src="./basisschool.png"></img>
+                     <div class="imagediv">
+                        <img src="./basisschool.png"></img>
+                    </div>
                     <div class="storycontent">
                         <p>Een kind liep in <span class="highlighted">{props.passedData[0].GWB_NAAM}</span> eerst  <span class="highlighted">{firstYear} km </span>naar de basisschool, nu is dat <span class="highlighted">{lastYear} km </span></p>
                         <p class="sidenote">* toename van <span class="bold">{sum}</span> tussen  <span class="bold">{props.passedData[0].Jaar}</span> en <span class="bold">{props.passedData[props.passedData.length - 1].Jaar}</span> </p>
