@@ -17,8 +17,9 @@ console.log(props.passedData[props.passedData.length - 1].Jaar + " " + lastYear)
                 <div class ="storycontainer">
                     <img src="./basisschool.png"></img>
                     <div class="storycontent">
-                        <p>De afstand naar de dichtstbijzijnde basisschool in <span class="highlighted">{props.passedData[0].GWB_NAAM}</span> is met <span class="highlighted">{sum.toString().replaceAll('-','')} km </span>afgenomen</p>
-                        <p class="sidenote">* tussen {props.passedData[0].Jaar} en {props.passedData[props.passedData.length - 1].Jaar} </p>
+                    <p>Een kind liep in <span class="highlighted">{props.passedData[0].GWB_NAAM}</span> eerst  <span class="highlighted">{firstYear} km </span>naar de basisschool, nu is dat <span class="highlighted">{lastYear} km </span></p>
+                        <p class="sidenote">* afname van <span class="bold">{sum.toString().replaceAll('-','')}</span> tussen {props.passedData[0].Jaar} en {props.passedData[props.passedData.length - 1].Jaar} </p>
+                        <img src='./basisschool_dotplot.png' class="dotplot"></img>
                     </div>
                 </div>
             );
@@ -28,8 +29,9 @@ console.log(props.passedData[props.passedData.length - 1].Jaar + " " + lastYear)
                 <div class ="storycontainer">
                     <img src="./basisschool.png"></img>
                     <div class="storycontent">
-                        <p>De afstand naar de dichtstbijzijnde basisschool in <span class="highlighted">{props.passedData[0].GWB_NAAM}</span> is met <span class="highlighted">{sum} km </span>toegenomen</p>
-                        <p class="sidenote">* tussen {props.passedData[0].Jaar} en {props.passedData[props.passedData.length - 1].Jaar} </p>
+                        <p>Een kind liep in <span class="highlighted">{props.passedData[0].GWB_NAAM}</span> eerst  <span class="highlighted">{firstYear} km </span>naar de basisschool, nu is dat <span class="highlighted">{lastYear} km </span></p>
+                        <p class="sidenote">* toename van <span class="bold">{sum}</span> tussen  <span class="bold">{props.passedData[0].Jaar}</span> en <span class="bold">{props.passedData[props.passedData.length - 1].Jaar}</span> </p>
+                        <img src='./basisschool_dotplot.png' class="dotplot"></img>
                     </div>
                 </div>
             );

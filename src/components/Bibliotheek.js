@@ -19,6 +19,7 @@ console.log(props.passedData[props.passedData.length - 1].Jaar + " " + lastYear)
                     <div class="storycontent">
                         <p>De afstand naar de dichtstbijzijnde bibliotheek in <span class="highlighted">{props.passedData[0].GWB_NAAM}</span> is met <span class="highlighted">{sum.toString().replaceAll('-','')} km </span>afgenomen</p>
                         <p class="sidenote">* tussen {props.passedData[0].Jaar} en {props.passedData[props.passedData.length - 1].Jaar} </p>
+                        <img src='./bibliotheek_dotplot.png' class="dotplot"></img>
                     </div>
                 </div>
             );
@@ -30,6 +31,7 @@ console.log(props.passedData[props.passedData.length - 1].Jaar + " " + lastYear)
                     <div class="storycontent">
                         <p>De afstand naar de dichtstbijzijnde bibliotheek in <span class="highlighted">{props.passedData[0].GWB_NAAM}</span> is met <span class="highlighted">{sum} km </span>toegenomen</p>
                         <p class="sidenote">* tussen {props.passedData[0].Jaar} en {props.passedData[props.passedData.length - 1].Jaar} </p>
+                        <img src='./bibliotheek_dotplot.png' class="dotplot"></img>
                     </div>
                 </div>
             );
