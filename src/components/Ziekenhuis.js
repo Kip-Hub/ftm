@@ -7,7 +7,6 @@ const Ziekenhuis = (props) => {
     let sumToRound = lastYear - firstYear;
     let sum = Math.round(parseFloat(sumToRound) * 100) / 100;
 
-
     switch (sum < 0) {
         case true:
             return (

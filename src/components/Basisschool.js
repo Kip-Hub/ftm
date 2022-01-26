@@ -7,7 +7,6 @@ const lastYear = props.passedData[props.passedData.length - 1].basis_afst.replac
 let sumToRound = lastYear - firstYear;
 let sum = Math.round(parseFloat(sumToRound)*100)/100;
 
-
     switch (sum < 0){
         case true:
             return (

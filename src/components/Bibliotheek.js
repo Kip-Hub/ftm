@@ -6,13 +6,9 @@ const Bibliotheek = (props) => {
     const lastYear = props.passedData[props.passedData.length - 1].bibliotheek_afst.toString().replaceAll(',', '.');
     let sumToRound = lastYear - firstYear;
     let sum = Math.round(parseFloat(sumToRound) * 100) / 100;
-    console.log(props.passedData[0].bibliotheek_afst)
-    console.log(props.passedData[0].Jaar + " " + firstYear);
-    console.log(props.passedData[props.passedData.length - 1].Jaar + " " + lastYear);
 
     switch (sum < 0) {
         case true:
-            console.log(sum.toString().replaceAll('-', '') + " km afgenomen");
             return (
                 <div class="storycontainer">
                     <img src="./bibliotheek.png"></img>
@@ -24,7 +20,6 @@ const Bibliotheek = (props) => {
                 </div>
             );
         case false:
-            console.log(sum + " km toegenomen");
             return (
                 <div class="storycontainer">
                     <img src="./bibliotheek.png"></img>
