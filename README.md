@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Follow the money
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![gif/demo](link)
 
-## Available Scripts
+## 📁 Contents
+[🚀 Description](https://github.com/Kip-Hub/ftm#-description)  
+[⚙️ Installation](https://github.com/Kip-Hub/ftm#-installation)  
+[📚 Documentation](https://www.notion.so/FTM-470915b610ab40c38b645c1915a629ca)  
+[🧩 Data](https://github.com/Kip-Hub/ftm#-resources)  
+[🙋 Resources](https://github.com/Kip-Hub/ftm#-sources)  
+[📎 License](https://github.com/Kip-Hub/ftm#-license)  
 
-In the project directory, you can run:
+## 🚀 Description
 
-### `npm start`
+During our semester of information design at the  Hogeschool van Amsterdam, [Follow the money](https://www.ftm.nl/) gave us the assignment to showcase the impoverishment of essential services in the Netherlands (in other ways than they had previously done in a published article)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This repository consists of our teams work to accomplish this goal.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ⚙️ Installation
 
-### `npm test`
+If you would like to use this repository on your own computer, you can paste the following code into your terminal to create a local copy of this project.  
+(Note: you are required to have [Git](https://git-scm.com/downloads) installed on your machine for this to work)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+git clone https://github.com/Kip-Hub/ftm.git
+```
 
-### `npm run build`
+After making a local copy of the repo you'll have to run the following code from within the folder you just created, to install the needed dependancies.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+After installing the dependancies you can run the project locally with
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+npm start
+```
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📚 Documentation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🧩 Data
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The data that was used in this project consists of:
 
-## Learn More
+* [cbs.json](https://github.com/Kip-Hub/ftm/blob/master/public/cbs.json)  
+This file contains all the collected data on impoverishment of services over the course of multiple years in countless parts of the Netherlands. This data was supplied to us by ftm.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* [areacodes.csv](https://github.com/Kip-Hub/ftm/blob/master/public/areacodes.csv)  
+This file acts as sort of a 'join' to create a link between the areacodes the cbs assigns to certain parts of the Netherlands, and their actual areacodes as they are known by the people living there.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## 🙋 Resources
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* [d3.js](https://d3js.org/) 
+* [react.js](https://reactjs.org/)
+* [react-insta-stories](https://mohitk05.github.io/react-insta-stories/)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📎 License

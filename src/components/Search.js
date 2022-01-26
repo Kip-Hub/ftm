@@ -48,8 +48,9 @@ const Search = () => {
       <Router>
             <section id="search">
               <div id="searchComponent">
+                <h2>ftm.nl</h2>
                 <img src="./startscherm.png"></img>
-                <p>Benieuwd naar je eigen buurt?</p>
+                <p class= "titelelement">Benieuwd naar de verschraling in je eigen buurt?</p>
                   <input
                       placeholder="1234AB"
                       id="postcodeInput"

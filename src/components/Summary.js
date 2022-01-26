@@ -26,46 +26,52 @@ let ziekSum = Math.round(parseFloat(ziekLastYear - ziekFirstYear)*100)/100;
 
 return (
     <div class ="storycontainer">
-        <h2>Hoe gaat het eraan toe in <span class="highlighted">{props.passedData[0].GWB_NAAM}</span></h2>
-        <div class ="storycontent">
+        <h2 class="title"> Hoe erg is de verschraling in  <span class="highlighted">{props.passedData[0].GWB_NAAM}</span></h2>
+        <img id="summaryImage" src='./summary.png'></img>
+        <div class ="summarycontent">
             <p>Afstand basisschool: {(() => {
                 switch (basisSum <= 0) {
-                    case true:   return <span class="green"> {basisSum.toString().replaceAll('-','')} km</span>;
+                    case true:   return <span class="blue"> {basisSum.toString().replaceAll('-','')} km</span>;
                     case false: return <span class="red"> {basisSum} km</span>;
                 }
             })()}</p>
                 
             <p>Afstand vmbo: {(() => {
                 switch (vmboSum <= 0) {
-                    case true:   return <span class="green"> {vmboSum.toString().replaceAll('-','')} km</span>;
+                    case true:   return <span class="blue"> {vmboSum.toString().replaceAll('-','')} km</span>;
                     case false: return <span class="red"> {vmboSum} km</span>;
                 }
             })()}</p>
 
             <p>Afstand havo/vwo: {(() => {
                 switch (havovwoSum <= 0) {
-                    case true:   return <span class="green"> {havovwoSum.toString().replaceAll('-','')} km</span>;
+                    case true:   return <span class="blue"> {havovwoSum.toString().replaceAll('-','')} km</span>;
                     case false: return <span class="red"> {havovwoSum} km</span>;
                 }
             })()}</p>
 
             <p>Afstand bibliotheek: {(() => {
                 switch (bibSum <= 0) {
-                    case true:   return <span class="green"> {bibSum.toString().replaceAll('-','')} km</span>;
+                    case true:   return <span class="blue"> {bibSum.toString().replaceAll('-','')} km</span>;
                     case false: return <span class="red"> {bibSum} km</span>;
                 }
             })()}</p>
 
             <p>Afstand ziekenhuis: {(() => {
                 switch (ziekSum <= 0) {
-                    case true:   return <span class="green"> {ziekSum.toString().replaceAll('-','')} km</span>;
+                    case true:   return <span class="blue"> {ziekSum.toString().replaceAll('-','')} km</span>;
                     case false: return <span class="red"> {ziekSum} km</span>;
                 }
             })()}</p>
-            <p class="sidenote"> <span class="green">groen</span> : niet veranderd / verkleind </p>
+            <p class="sidenote"> <span class="blue">blauw</span> : niet veranderd / verkleind </p>
             <p class="sidenote"> <span class="red">rood</span> : afstand vergroot </p>
         </div>
-        
+        <div class="sharecontainer">
+            <img src="./facebook.png" class="icon"></img>
+            <img src="./twitter.png" class="icon"></img> 
+            <img src="./instagram.png" class="icon"></img>  
+            <button id=''>Bekijk andere postcode</button>
+        </div>   
     </div>
 );
 }
