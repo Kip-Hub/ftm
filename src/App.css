@@ -87,11 +87,23 @@ body {
   padding-right: 1em;
 }
 
-.storycontainer .highlighted {
+.highlighted {
   color: rgb(255, 102, 51);
 }
 
+.red {
+  color: red;
+}
+
+.green{
+  color: green;
+}
+
 .storycontainer .sidenote {
-  font-size: 0.7em;
+  font-size: 0.6em;
   font-weight: normal;
+}
+
+#returnbutton {
+  z-index: 99999;
 }
