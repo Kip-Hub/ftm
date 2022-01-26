@@ -11,7 +11,9 @@ const Ziekenhuis = (props) => {
         case true:
             return (
                 <div class="storycontainer">
-                    <img src="./ziekenhuis.png"></img>
+                    <div class="imagediv">
+                        <img src="./ziekenhuis.png"></img>
+                    </div>
                     <div class="storycontent">
                         <p>Bij een noodgeval moet je nu <span class="highlighted"> {lastYear} km</span> rijden naar het ziekenhuis. Dit was voorheen<span class="highlighted"> {firstYear} km</span>.</p>
                         <p class="sidenote">* afname van <span class="bold">{sum.toString().replaceAll('-', '')}</span> tussen  <span class="bold">{props.passedData[0].Jaar}</span> en <span class="bold">{props.passedData[props.passedData.length - 1].Jaar}</span> </p>
@@ -22,7 +24,9 @@ const Ziekenhuis = (props) => {
         case false:
             return (
                 <div class="storycontainer">
-                    <img src="./ziekenhuis.png"></img>
+                    <div class="imagediv">
+                        <img src="./ziekenhuis.png"></img>
+                    </div>
                     <div class="storycontent">
                         <p>Bij een noodgeval moet je nu <span class="highlighted"> {lastYear} km</span> rijden naar het ziekenhuis. Dit was voorheen<span class="highlighted"> {firstYear} km</span>.</p>
                         <p class="sidenote">* toename van <span class="bold">{sum}</span> tussen  <span class="bold">{props.passedData[0].Jaar}</span> en <span class="bold">{props.passedData[props.passedData.length - 1].Jaar}</span> </p>

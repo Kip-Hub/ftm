@@ -11,7 +11,9 @@ const Bibliotheek = (props) => {
         case true:
             return (
                 <div class="storycontainer">
-                    <img src="./bibliotheek.png"></img>
+                    <div class="imagediv">
+                        <img src="./bibliotheek.png"></img>
+                    </div>
                     <div class="storycontent">
                         <p> Om een boek te lenen leg je nu <span class="highlighted">{sum.toString().replaceAll('-', '')} km   </span> minder af dan in <span class="highlighted">{props.passedData[props.passedData.length - 1].Jaar}</span></p>
                         <p class="sidenote">* afname van <span class="bold">{sum.toString().replaceAll('-', '')}</span> tussen  <span class="bold">{props.passedData[0].Jaar}</span> en <span class="bold">{props.passedData[0].Jaar}</span> </p>
@@ -22,7 +24,9 @@ const Bibliotheek = (props) => {
         case false:
             return (
                 <div class="storycontainer">
-                    <img src="./bibliotheek.png"></img>
+                    <div class="imagediv">
+                        <img src="./bibliotheek.png"></img>
+                    </div>
                     <div class="storycontent">
                         <p> Om een boek te lenen leg je nu <span class="highlighted"> {sum} km   </span> meer af dan in <span class="highlighted">{props.passedData[0].Jaar}. </span></p>
                         <p class="sidenote">* toename van <span class="bold">{sum}</span> tussen  <span class="bold">{props.passedData[0].Jaar}</span> en <span class="bold">{props.passedData[props.passedData.length - 1].Jaar}</span> </p>
