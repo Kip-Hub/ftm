@@ -82,8 +82,9 @@ body {
 
 .storycontent {
   text-align: left;
-  font-size: 1.3em;
+  font-size: 1.2em;
   max-width: 90%;
+  margin-top: -2em;
   padding-left: 1em;
   padding-right: 1em;
   position: relative;
@@ -112,6 +113,10 @@ body {
   color: rgb(255, 102, 51);
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .red {
   color: rgb(255, 102, 51);
 }
@@ -121,6 +126,7 @@ body {
 }
 
 .storycontainer .sidenote {
+  margin-top: -1em;
   font-size: 0.6em;
   font-weight: normal;
 }
@@ -151,4 +157,10 @@ body {
   color: white;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
+}
+
+.dotplot {
+  max-width: 90%;
+  padding-left: 1em;
+  padding-right: 1em;
 }
