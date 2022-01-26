@@ -7,10 +7,10 @@
 [🚀 Description](https://github.com/Kip-Hub/ftm#-description)  
 [⚙️ Installation](https://github.com/Kip-Hub/ftm#-installation)  
 [📚 Documentation](https://www.notion.so/FTM-470915b610ab40c38b645c1915a629ca)  
-[🧩 Data](https://github.com/Kip-Hub/ftm#-resources)  
-[📦 Resources](https://github.com/Kip-Hub/ftm#-sources) 
-[🙋 Contributors](https://github.com/Kip-Hub/ftm#-contributors) 
-[📎 License](https://github.com/Kip-Hub/ftm#-license)  
+[🧩 Data](https://github.com/Kip-Hub/ftm#-resources)    
+[📦 Resources](https://github.com/Kip-Hub/ftm#-sources)   
+[🙋 Contributors](https://github.com/Kip-Hub/ftm#-contributors)   
+[📎 License](https://github.com/Kip-Hub/ftm#-license)   
 
 ## 🚀 Description
 
@@ -52,10 +52,44 @@ The process we went through while concepting, designing and building the project
 The data that was used in this project consists of:
 
 * [cbs.json](https://github.com/Kip-Hub/ftm/blob/master/public/cbs.json)  
-This file contains all the collected data on impoverishment of services over the course of multiple years in countless parts of the Netherlands. This data was provided by ftm.
+This file contains all the collected data on impoverishment of services over the course of multiple years in countless parts of the Netherlands. This data was provided by ftm.    
+```json
+//example of data structure cbs.json
+{
+    "GWB_CODE": "BU01935200",
+    "GWB_NAAM": "Windesheim",
+    "Jaar": 2012,
+    "huisarts_afst": "4,8",
+    "huisartsenpost_afst": "8,9",
+    "ziekenhuis_incl_afst": "8,1",
+    "ziekenhuis_excl_afst": "8,1",
+    "basis_afst": "0,4",
+    "vmbo_afst": 5,
+    "havovwo_afst": 5,
+    "bibliotheek_afst": 5,
+    "inwoners": 380
+  },
+```  
 
 * [areacodes.csv](https://github.com/Kip-Hub/ftm/blob/master/public/areacodes.csv)  
-This file acts as sort of a 'join' to create a link between the areacodes the cbs assigns to certain parts of the Netherlands, and their actual areacodes as they are known by the people living there.  
+This file acts as sort of a 'join' to create a link between the areacodes the cbs assigns to certain parts of the Netherlands, and their actual areacodes as they are known by the people living there.   
+
+```csv
+//example of data structure of areacodes.csv
+
+PC6,Buurt2020,Wijk2020,Gemeente2020
+1011AB,3630400,36304,363
+1011AC,3630400,36304,363
+1011AD,3630400,36304,363
+1011AE,3630400,36304,363
+1011AG,3630403,36304,363
+1011AH,3630403,36304,363
+1011AJ,3630403,36304,363
+1011AK,3630401,36304,363
+1011AL,3630408,36304,363
+1011AM,3630401,36304,363
+1011AN,3630401,36304,363
+```
 
 * [shapefiles](https://github.com/ftmnl/verschraling_voorzieningen)
 A library full of shapefiles to draw maps with according to the collected data, we ended up not using these, but ftm provided us with this data either way. 
