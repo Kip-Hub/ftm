@@ -7,12 +7,9 @@ const lastYear = props.passedData[props.passedData.length - 1].basis_afst.replac
 let sumToRound = lastYear - firstYear;
 let sum = Math.round(parseFloat(sumToRound)*100)/100;
 
-console.log(props.passedData[0].Jaar + " " + firstYear);
-console.log(props.passedData[props.passedData.length - 1].Jaar + " " + lastYear);
 
     switch (sum < 0){
         case true:
-            console.log(sum.toString().replaceAll('-','') + " km afgenomen");
             return (
                 <div class ="storycontainer">
                     <img src="./basisschool.png"></img>
@@ -24,7 +21,6 @@ console.log(props.passedData[props.passedData.length - 1].Jaar + " " + lastYear)
                 </div>
             );
         case false:
-            console.log(sum + " km toegenomen");
             return (
                 <div class ="storycontainer">
                     <img src="./basisschool.png"></img>
