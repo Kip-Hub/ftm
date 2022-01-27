@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 
 const Ziekenhuis = (props) => {
 
-    const firstYear = props.passedData[0].ziekenhuis_excl_afst.replaceAll(',', '.');
+    const firstYear = props.passedData[0].ziekenhuis_excl_afst.toString().replaceAll(',', '.');
     const lastYear = props.passedData[props.passedData.length - 1].ziekenhuis_excl_afst.toString().replaceAll(',', '.');
+    console.log(firstYear + "en" + lastYear)
     let sumToRound = lastYear - firstYear;
     let sum = Math.round(parseFloat(sumToRound) * 100) / 100;
 

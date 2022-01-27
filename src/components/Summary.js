@@ -6,8 +6,8 @@ const Summary = (props) => {
     const basisLastYear = props.passedData[props.passedData.length - 1].basis_afst.toString().replaceAll(',', '.');
     let basisSum = Math.round(parseFloat(basisLastYear - basisFirstYear) * 100) / 100;
 
-    const vmboFirstYear = props.passedData[0].basis_afst.toString().replaceAll(',', '.');
-    const vmboLastYear = props.passedData[props.passedData.length - 1].basis_afst.toString().replaceAll(',', '.');
+    const vmboFirstYear = props.passedData[0].vmbo_afst.toString().replaceAll(',', '.');
+    const vmboLastYear = props.passedData[props.passedData.length - 1].vmbo_afst.toString().replaceAll(',', '.');
     let vmboSum = Math.round(parseFloat(vmboLastYear - vmboFirstYear) * 100) / 100;
 
     const havovwoFirstYear = props.passedData[0].havovwo_afst.toString().replaceAll(',', '.');
@@ -18,8 +18,8 @@ const Summary = (props) => {
     const bibLastYear = props.passedData[props.passedData.length - 1].bibliotheek_afst.toString().replaceAll(',', '.');
     let bibSum = Math.round(parseFloat(bibLastYear - bibFirstYear) * 100) / 100;
 
-    const ziekFirstYear = props.passedData[0].ziekenhuis_incl_afst.toString().replaceAll(',', '.');
-    const ziekLastYear = props.passedData[props.passedData.length - 1].ziekenhuis_incl_afst.toString().replaceAll(',', '.');
+    const ziekFirstYear = props.passedData[0].ziekenhuis_excl_afst.toString().replaceAll(',', '.');
+    const ziekLastYear = props.passedData[props.passedData.length - 1].ziekenhuis_excl_afst.toString().replaceAll(',', '.');
     let ziekSum = Math.round(parseFloat(ziekLastYear - ziekFirstYear) * 100) / 100;
 
 
